@@ -1,59 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Footer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Footer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 text-gray-800">
 
-    <!-- Footer Section -->
-    <footer class="bg-[#659f8f] dark:bg-[#313131] text-white mt-10">
-        <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            
-            <!-- About Section -->
-            <div>
-                <h2 class="text-xl font-bold mb-4">About Us</h2>
-                <p class="text-sm">We are committed to building accessible and responsive websites using modern CSS frameworks like Tailwind.</p>
-            </div>
-            
-            <!-- Quick Links -->
-            <div>
-                <h2 class="text-xl font-bold mb-4">Quick Links</h2>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="#" class="hover:underline">Home</a></li>
-                    <li><a href="#" class="hover:underline">Services</a></li>
-                    <li><a href="#" class="hover:underline">Blog</a></li>
-                    <li><a href="#" class="hover:underline">Contact</a></li>
-                </ul>
-            </div>
+  <!-- Footer Section -->
+  <footer class="bg-[#659f8f] dark:bg-[#313131] text-white mt-10 relative">
+    <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+      <!-- About Section -->
+      <div>
+        <h2 class="text-xl font-bold mb-4">About Us</h2>
+        <p class="text-sm">We are committed to building accessible and responsive websites using modern CSS frameworks like Tailwind.</p>
+      </div>
 
-            <!-- Newsletter Subscription -->
-            <div>
-                <h2 class="text-xl font-bold mb-4">Subscribe to Our Newsletter</h2>
-                <form class="flex flex-col sm:flex-row items-center sm:space-x-2">
-                    <input type="email" placeholder="Enter your email" class="w-full p-2 rounded text-gray-900" required>
-                    <button type="submit" class="mt-2 sm:mt-0 px-4 py-2 bg-white text-[#659f8f] font-semibold rounded hover:bg-gray-200">
-                        Subscribe
-                    </button>
-                </form>
-            </div>
+      <!-- Quick Links -->
+      <div>
+        <h2 class="text-xl font-bold mb-4">Quick Links</h2>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:underline">Home</a></li>
+          <li><a href="#" class="hover:underline">Services</a></li>
+          <li><a href="#" class="hover:underline">Blog</a></li>
+          <li><a href="#" class="hover:underline">Contact</a></li>
+        </ul>
+      </div>
 
-            <!-- Social Media Links -->
-            <div>
-                <h2 class="text-xl font-bold mb-4">Follow Us</h2>
-                <div class="flex space-x-4">
-                    <a href="#" class="hover:text-gray-300" aria-label="Facebook">🌐</a>
-                    <a href="#" class="hover:text-gray-300" aria-label="Twitter">🐦</a>
-                    <a href="#" class="hover:text-gray-300" aria-label="Instagram">📸</a>
-                </div>
-            </div>
+      <!-- Newsletter Button CTA -->
+      <div>
+        <h2 class="text-xl font-bold mb-4">Stay Updated</h2>
+        <p class="text-sm mb-4">Click below to subscribe to our newsletter and get the latest updates straight to your inbox.</p>
+        <button onclick="alert('Thank you for subscribing!')" class="px-6 py-3 bg-white text-[#659f8f] font-semibold rounded-lg shadow hover:bg-gray-200 hover:scale-105 transition-all duration-300">
+          Subscribe Now
+        </button>
+      </div>
+
+      <!-- Social Media Links -->
+      <div>
+        <h2 class="text-xl font-bold mb-4">Follow Us</h2>
+        <div class="flex space-x-4 text-2xl">
+          <a href="#" class="transform transition-transform hover:scale-125 hover:text-gray-300" aria-label="Facebook">🌐</a>
+          <a href="#" class="transform transition-transform hover:scale-125 hover:text-gray-300" aria-label="Twitter">🐦</a>
+          <a href="#" class="transform transition-transform hover:scale-125 hover:text-gray-300" aria-label="Instagram">📸</a>
         </div>
+      </div>
+    </div>
 
-        <div class="text-center text-sm mt-8 border-t border-white/20 pt-4">
-            &copy; 2025 Responsive Footer. All rights reserved.
-        </div>
-    </footer>
+    <!-- Back to Top Button -->
+    <div class="absolute right-4 bottom-4">
+      <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="bg-white text-[#659f8f] px-4 py-2 rounded-full shadow-lg hover:bg-gray-200 transition-all duration-300">
+        ↑ Top
+      </button>
+    </div>
+
+    <div class="text-center text-sm mt-12 border-t border-white/20 pt-4">
+      &copy; 2025 Responsive Footer. All rights reserved.
+    </div>
+  </footer>
+
 </body>
 </html>
